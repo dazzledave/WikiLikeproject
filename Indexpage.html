@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page - My Encyclopedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #121331;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #343a40;
+            transition: color 0.3s;
+            padding: 10px;
+            display: block;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #121331;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Index Page</h1>
+        <form action="search.php" method="GET">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <h2>Articles On This Page</h2>
+        <!-- Display list of articles -->
+        <ul>
+            <li><a href="article1.html">Introduction To Artificial Intelligence</a></li>
+            <li><a href="article2.html">Machine Learning Algorithms: A Comprehensive Guide</a></li>
+            <li><a href="article3.html">How does a battery work?</a></li>
+            <li><a href="article4.html">Literature Terms & Their Meanings</a></li>
+            <li><a href="article5.html">How does the Respiratory System Work?</a></li>
+            <li><a href="article6.html">Does Mental Health Really Matter?</a></li>
+            <li><a href="article7.html">What Makes a Great Basketball Player?</a></li>
+            <!-- Add more suggested articles as needed -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Encyclopedia</p>
+    </footer>
+</body>
+</html>

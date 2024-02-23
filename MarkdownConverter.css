@@ -1,0 +1,43 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .converter {
+    background-color: #121331;
+    text-align: center;
+    color: #ccc;
+    font-family: Arial Black;
+    padding: 20px;
+  }
+
+  .conversionform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  
+  .conversionform label, .conversionform textarea {
+    width: 500px;
+  }
+  
+  .conversionform button {
+    font-family: Arial Black;
+    color: beige;
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+  }
+  

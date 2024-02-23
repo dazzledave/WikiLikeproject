@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown to HTML Converter</title>
+  <link rel="stylesheet" href="MarkdownConverter.css">
+  <!-- Include marked.js from local file -->
+  <script src="C:\Users\HP\Documents\My Web Class\marked.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h2>Markdown to HTML Converter</h2>
+        </div>
+        <form action="#" method="post" class="conversionform">
+            <label for="markdown">Markdown:</label>
+            <textarea id="markdown" name="markdown" rows="10" required></textarea>
+            <br>
+            <!-- Change the button type to submit -->
+            <button type="submit" id="convertBtn">Convert to HTML</button>
+        </form>
+        <div id="htmlResult"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Encyclopedia</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const convertBtn = document.getElementById("convertBtn");
+            const markdownInput = document.getElementById("markdown");
+            const htmlResult = document.getElementById("htmlResult");
+
+            convertBtn.addEventListener("click", function(event) {
+                // Prevent the form from submitting
+                event.preventDefault();
+                const markdownText = markdownInput.value;
+                // Call the marked function to convert Markdown to HTML
+                const htmlText = marked(markdownText);
+                htmlResult.innerHTML = htmlText;
+            });
+        });
+    </script>
+</body>
+</html>

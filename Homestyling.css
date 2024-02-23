@@ -1,0 +1,127 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #191c20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #e7ebee;
+    color: #121331;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial Black;
+}
+
+/* Search box styles */
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(192, 12, 12);
+}
+
+.search-box button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Main content styles */
+main {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0e1013;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Suggested articles section styles */
+.suggested-articles {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    align-self: flex-start ; /* Align to the right */
+    width: 100% ;
+}
+
+.suggested-articles h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.suggested-articles ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left ;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.suggested-articles ul li {
+    margin: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.suggested-articles ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+/* CSS for the horizontal line */
+hr {
+    border: none;
+    border-top: 1px solid rgb(10, 1, 1); /* Set border properties for the top side */
+    width: 100%; /* Adjust width as needed */
+}

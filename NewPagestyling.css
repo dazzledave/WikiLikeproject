@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh;
+  height: 700px;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +22,25 @@
 .entryform label, .entryform input, .entryform textarea {
   width: 500px;
 }
+/* Navigation styles */
+nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
 
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #e7ebee;
+  color: #121331;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Arial Black;
+}
 .entryform button{
   font-family: Arial Black;
   color: beige;
